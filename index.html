@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>fingerprint</title>
+  <script src="fingerprint.js"></script>
+</head>
+<body>
+
+  <div style="text-align: center;">
+    <h3 style="margin-top: 20px">Your browser fingerprint with screen_resolution enabled is:</h3>
+    <h1 id="fp4"></h1>
+  </div>
+  <script>
+    var fp4 = new Fingerprint({screen_resolution: true});
+    document.getElementById('fp4').innerHTML = fp4.get();
+  </script>
+</body>
+</html>
